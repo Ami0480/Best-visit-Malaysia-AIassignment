@@ -1,9 +1,13 @@
 function showActivity(event) {
   event.preventDefault();
 
-  let answerElement = document.querySelector("#answer");
-  answerElement.innerHTML = "hi";
+  new Typewriter("#answer", {
+    strings: "activity",
+    autoStart: true,
+    delay: 30,
+    cursor: "",
+  });
 }
 
-let searchElement = document.querySelector("#submit-button");
-searchElement.addEventListener("click", showActivity);
+let activityElement = document.querySelector("#search-form");
+activityElement.addEventListener("submit", showActivity);
