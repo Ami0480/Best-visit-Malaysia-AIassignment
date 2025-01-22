@@ -11,20 +11,23 @@
   <body>
     <div class="container">
       <h1>Best visit in Malaysia</h1>
+      <div class="form-container">
+        <form class="search" id="search-form">
+          <input
+            type="text"
+            placeholder="What would like to do in Malaysia?"
+            autofocus
+            required
+            autocomplete="off"
+            class="search-form"
+            id="search-form-user"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e : beach, food, walking</div>
+      </div>
 
-      <form class="search" id="search-form">
-        <input
-          type="text"
-          placeholder="What would like to do in Malaysia?"
-          autofocus
-          required
-          autocomplete="off"
-          class="search-form"
-          id="search-form-user"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
-      <div class="answer strong" id="answer"></div>
+      <div class="answer strong hidden" id="answer"></div>
 
       <footer>
         This is coded by
